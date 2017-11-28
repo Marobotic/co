@@ -1,18 +1,64 @@
 body {
-    align-items: center;
-    display: flex;
     background-color: #513232;
-    justify-content: center;
-    text-align: center;
 }
 
 p {
     font-size: 70px;
     color: #d1c4c4;
     font-family: CaviarDreams;
+    text-align: center;
 }
 
 @font-face {
     font-family: CaviarDreams;
     src: url(fonts/CaviarDreams.ttf);
+}
+
+.button {
+    background: url('images/button2.png');
+    background-size: 400px 100px;
+    width: 400px;
+    height: 100px;
+    font-family: CaviarDreams;
+    font-size: 40px;
+    overflow: hidden;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+    position: absolute;
+    right: 0px;
+    top: 300px;
+    color: #d1c4c4;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.button:hover {
+    background: url('images/button1.png');
+    background-size: 400px 100px;
+    width: 400px;
+    height: 100px;
+    font-family: CaviarDreams;
+    font-size: 40px;
+    overflow: hidden;
+    border: none;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    color: #000000;
+}
+
+.button:active {
+    background: url('images/button3.png');
+    background-size: 400px 100px;
+    width: 400px;
+    height: 100px;
+    font-family: CaviarDreams;
+    font-size: 40px;
+    overflow: hidden;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
 }
