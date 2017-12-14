@@ -1,0 +1,73 @@
+body {
+    background-color: #7c2d6d;
+}
+
+p {
+    color: #a78aa2;
+}
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../../../fonts/CaviarDreams.ttf);
+}
+
+.title {
+    font-family: CaviarDreams;
+    color: #a78aa2;
+    font-size: 100px;
+    overflow: hidden;
+    border: none;
+    display: inline-block;
+    outline: 0;
+    position: absolute;
+    left: 20px;
+    top: -50px;
+    color: #d1c4c4;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.text {
+    font-family: CaviarDreams;
+    font-size: 50px;
+    overflow: hidden;
+    border: none;
+    display: inline-block;
+    outline: 0;
+    position: absolute;
+    left: 100px;
+    top: 130px;
+    color: #d1c4c4;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.Cake {
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+    border: none;
+    display: inline-block;
+    outline: 0;
+    position: absolute;
+    right: 0px;
+    top: 300px;
+    color: #d1c4c4;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.Cake2 {
+    width: 600px;
+    height: 250px;
+    overflow: hidden;
+    border: none;
+    display: inline-block;
+    outline: 0;
+    position: absolute;
+    left: 0px;
+    top: 300px;
+    color: #d1c4c4;
+    text-align: center;
+    padding-right: 30px;
+}

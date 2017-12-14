@@ -14,3 +14,34 @@ $(document).ready(function() {
 
 
 });
+
+
+$(document).ready(function() {
+    $(".birthday").click(function(event) {
+        console.log("pressed");
+        $(this).load("exclusives/exclusives.html");
+
+    });
+
+
+});
+
+$(document).ready(function() {
+    $(".MATHY").click(function(event) {
+        console.log("OOO");
+
+    });
+
+
+});
+
+
+$(document).ready(function() {
+    $(".ANAIS").click(function(event) {
+        console.log("Anais!");
+        $(this).load("birthday/Anais/index.html");
+
+    });
+
+
+});
