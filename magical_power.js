@@ -19,7 +19,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(".birthday").click(function(event) {
         console.log("pressed");
-        $(this).load("exclusives/exclusives.html");
+        window.location.href = "exclusives/exclusives.html"
 
     });
 
@@ -39,7 +39,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(".ANAIS").click(function(event) {
         console.log("Anais!");
-        $(this).load("birthday/Anais/index.html");
+        window.location.href = "birthday/Anais/index.html"
 
     });
 
