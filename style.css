@@ -26,7 +26,7 @@ p {
     display: inline-block;
     cursor: pointer;
     outline: 0;
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: 300px;
     color: #d1c4c4;
@@ -48,89 +48,7 @@ p {
     outline: 0;
 }
 
-
-.birthday {
-    background: #794848;
-    width: 100%;
-    height: 50px;
-    font-family: CaviarDreams;
-    font-size: 25px;
-    overflow: hidden;
-    border: none;
-    display: inline-block;
-    cursor: pointer;
-    outline: 0;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    color: #d1c4c4;
-    text-align: center;
-    padding-right: 30px;
-}
-
-.birthday:hover {
-    background: #ac8b8b;
-    color: #000000;
-}
-
-.birthday:active {
-    background: #c5b6b6;
-}
-
-
-.ANAIS {
-    background: #794848;
-    width: 100%;
-    height: 50px;
-    font-family: CaviarDreams;
-    font-size: 25px;
-    overflow: hidden;
-    border: none;
-    display: inline-block;
-    cursor: pointer;
-    outline: 0;
-    position: absolute;
-    left: 0px;
-    bottom: 55px;
-    color: #d1c4c4;
-    text-align: center;
-    padding-right: 30px;
-}
-
-.ANAIS:hover {
-    background: #ac8b8b;
-    color: #000000;
-}
-
-.ANAIS:active {
-    background: #c5b6b6;
-}
-
-
-.MATHY {
-    background: #794848;
-    width: 100%;
-    height: 50px;
-    font-family: CaviarDreams;
-    font-size: 25px;
-    overflow: hidden;
-    border: none;
-    display: inline-block;
-    cursor: pointer;
-    outline: 0;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    color: #d1c4c4;
-    text-align: center;
-    padding-right: 30px;
-}
-
-.MATHY:hover {
-    background: #ac8b8b;
-    color: #000000;
-}
-
-.MATHY:active {
-    background: #c5b6b6;
+.second {
+      right: 0px;
+    top: 450px;
 }
