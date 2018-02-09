@@ -1,10 +1,12 @@
 $(document).ready(function() {
     $("#PUNCHES").hide();
-     $("#CRAFT").hide().delay(500).fadeIn(400);
+    $("#home").hide();
+    $("#games").hide();
+    $("#CRAFT").hide().delay(500).fadeIn(400);
     $("#CRAFT").click(function(event) {
         $(".text").text("YOU'RE TOO WEAK!");
         $(this).slideUp(300);
-          $('#PUNCHES').slideUp(300)
+        $('#PUNCHES').slideUp(300)
         console.log("pressed");
 
         function reset() {
@@ -26,8 +28,15 @@ $(document).ready(function() {
     $("#PUNCHES").click(function(event) {
         $(this).slideUp(300);
         $('#CRAFT').slideUp(300)
-         $(".text").text("YOU HAVE SHOWN TRUE STRENGTH!");
-         // $('.text').delay(1500).fadeOut(1000).delay(1500).fadeIn(1000)
+        $(".text").text("YOU HAVE SHOWN TRUE STRENGTH!");
+        // $('.text').delay(1500).fadeOut(1000).delay(1500).fadeIn(1000)
+
+        function Menu() {
+            $(".text").fadeOut(500);
+            $('#home').fadeIn(300)
+            $('#games').fadeIn(300)
+        }
+        setTimeout(Menu, 3000);
 
     });
 

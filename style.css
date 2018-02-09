@@ -49,6 +49,33 @@ p {
 }
 
 .second {
-      right: 0px;
+    right: 0px;
     top: 450px;
+}
+
+.games {
+    width: 125px;
+    height: 125px;
+    background: url('images/Home.png');
+    overflow: hidden;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+}
+
+.home {
+    width: 125px;
+    height: 125px;
+    background: url('images/Games.png');
+    overflow: hidden;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+}
+.main{
+    position: absolute;
+    right: 40%;
+    top: 25px;
 }
