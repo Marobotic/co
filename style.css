@@ -2,53 +2,96 @@ body {
     background-color: #513232;
 }
 
-p {
-    font-size: 70px;
-    color: #d1c4c4;
-    font-family: CaviarDreams;
-    text-align: center;
-}
-
 @font-face {
     font-family: CaviarDreams;
     src: url(fonts/CaviarDreams.ttf);
 }
 
-.button {
-    background: url('images/button2.png');
-    background-size: 400px 100px;
-    width: 400px;
-    height: 100px;
-    font-family: CaviarDreams;
-    font-size: 40px;
-    overflow: hidden;
-    border: none;
-    display: inline-block;
-    cursor: pointer;
-    outline: 0;
-    position: fixed;
-    right: 0px;
-    top: 300px;
+h1 {
+    font-size: 60px;
     color: #d1c4c4;
-    text-align: right;
-    padding-right: 30px;
+    font-family: CaviarDreams;
+    text-align: center;
 }
 
-.button:hover {
-    background: url('images/button1.png');
-    background-size: 400px 100px;
-
-    color: #000000;
+p {
+    font-size: 35px;
+    color: #d1c4c4;
+    font-family: CaviarDreams;
+    text-align: center;
+    margin-left: 10px;
 }
 
-.button:active {
-    background: url('images/button3.png');
-    background-size: 400px 100px;
-
+button {
+    background-color: #794848;
+    color: #d1c4c4;
+    font-family: CaviarDreams;
+    font-size: 30px;
     outline: 0;
+    border: 0px;
 }
 
-.second {
-      right: 0px;
-    top: 450px;
+
+
+.main {
+    position: absolute;
+    right: 40%;
+    top: 25px;
 }
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #794848;
+    justify-content: center;
+}
+
+.flex-container>div {
+
+    width: auto;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    line-height: 45px;
+    color: #d1c4c4;
+    font-size: 35px;
+    font-family: CaviarDreams;
+}
+
+
+.main-content {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.discord-info {
+    height: 100px;
+    width: 100px;
+}
+
+.discord-copy {
+    margin-left: 25px;
+    margin-top: 20px;
+    color: #d1c4c4;
+    width: 250px;
+    height: 70px;
+}
+
+.Border-moderate {
+display: flex;
+    flex-wrap: nowrap;
+justify-content: center;
+width: 100%;
+height: 500px;
+    background-color: #794848;
+}
+
+.container1 {
+    background-color: #000000;
+    width: 100%;
+    height: 300px;
+}
+
