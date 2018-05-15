@@ -5,17 +5,52 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="magical_power.js"></script>
+    <script src="clipboard.js"></script>
     <link rel="shortcut icon" href="favicon.ico" </head>
 
     <body>
-        <p class="text">YOU MUST CRAFT SOME MAGIC TO PASS, PEASANT!</p>
-        <button class="button" id="CRAFT">CRAFT</button>
-        <button class="button second" id="PUNCHES">
-            PUNCHES</button>
-        <div class="main">
-        <button class="games" id="games"></button>
-        <button class="home" id="home"></button>
+        <h1>Inserting shady Russian code...</h1>
+        <div class="flex-container">
+            <button id="Discord">Discord</button>
+            <div>|</div>
+            <button id="Skills">Skills</button>
+            <div>|</div>
+            <button id="Projects">Current projects</button>
         </div>
+        <div class="main-content">
+            <image class="discord-info" src="images/maro.png"> </image>
+            <p id="username"> Maro#1980 </p>
+            <button class="discord-copy" id="discord-copy" data-clipboard-target="#Discord">Copy username</button>
+        </div>
+        <div class="Skillscontent">
+
+            <p class="type">Advanced</p>
+            <p>Photoshop</p>
+            <p>Web Design</p>
+            <p class="type">Moderate</p>
+            <p>Java</p>
+            <p>Android Development</p>
+            <p>Android XML design</p>
+            <p class="type">Unity</p>
+            <p>Beginner</p>
+            <p>JavaScript</p>
+
+        </div>
+        <script>
+        var clipboard = new ClipboardJS('.discord-copy', {
+            text: function() {
+                return 'Maro#1980';
+            }
+        });
+
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+        </script>
     </body>
 
 </html>
