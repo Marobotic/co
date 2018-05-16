@@ -14,7 +14,7 @@ h1 {
     text-align: center;
 }
 
-p {
+.Type {
     font-size: 35px;
     color: #d1c4c4;
     font-family: CaviarDreams;
@@ -30,7 +30,12 @@ button {
     outline: 0;
     border: 0px;
 }
-
+button:hover {
+     background-color: #855959;
+}
+button:active {
+     background-color: #5b3d3d;
+}
 
 
 .main {
@@ -95,3 +100,11 @@ height: 500px;
     height: 300px;
 }
 
+.advanced {
+    font-size: 35px;
+    color: #d1c4c4;
+    font-family: CaviarDreams;
+    text-align: center;
+    margin-left: 10px;
+    background-color: #794848;
+}
