@@ -11,11 +11,11 @@
     <body>
         <h1>Inserting shady Russian code...</h1>
         <div class="flex-container">
-            <button id="Discord">Discord</button>
+            <button id="Projects">Projects</button>
             <div>|</div>
             <button id="Skills">Skills</button>
             <div>|</div>
-            <button id="Projects">Current projects</button>
+            <button id="Discord">Discord</button>
         </div>
         <div class="main-content">
             <image class="discord-info" src="images/maro.png"> </image>
@@ -35,7 +35,25 @@
             <p class="Type">Android Development</p>
         </div>
         <div class="currentprojects">
-            <p class="type">Uhhh this current one... </p>
+            <p class="type" id="Platform">Choose a platform</p>
+            <div class="platform">
+                <button class="button_Web">Web</button>
+                <p class="slash">|</p>
+                <button class="button_Android">Android</button>
+            </div>
+            <div class="web">
+                <button class="Marobotic">Marobotic.co</button>
+                <button class="w_TicTacToe">Tic Tac Toe</button>
+                <button class="w_Hangman">Hangman</button>
+            </div>
+            <div class="android">
+                <button class="a_Spectrum">Spectrum</button>
+                <button class="a_TicTacToe">Tic Tac Toe</button>
+                <button class="a_Hangman">Hangman</button>
+            </div>
+            <div class="Back_Container">
+                <button id="back_button"> back</button>
+            </div>
         </div>
         <script>
         var clipboard = new ClipboardJS('.discord-copy', {
