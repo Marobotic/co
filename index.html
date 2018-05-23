@@ -4,12 +4,10 @@
     <title>KA BOOM!</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="magical_power.js"></script>
-    <script src="clipboard.js"></script>
     <link rel="shortcut icon" href="favicon.ico" </head>
 
     <body>
-        <h1>Inserting shady Russian code...</h1>
+        <h1 class="top_text" id="top_text">Inserting shady Russian code...</h1>
         <div class="flex-container">
             <button id="Projects">Projects</button>
             <div>|</div>
@@ -20,22 +18,22 @@
         <div class="main-content">
             <image class="discord-info" src="images/maro.png"> </image>
             <p id="username" class="Type"> Maro#1980 </p>
-            <button class="discord-copy" id="discord-copy" data-clipboard-target="#Discord">Copy username</button>
         </div>
         <div class="Skillscontent">
             <p class="Advanced">Advanced</p>
             <p class="Type">Photoshop</p>
-            <p class="Type">Web Design</p>
-            <p class="Advanced">Moderate</p>
-            <p class="Type">Java</p>
             <p class="Type">Android XML design</p>
-            <p class="Advanced">Beginner</p>
-            <p class="Type">JavaScript</p>
+            <p class="Type">Customer support (Windows, Android)</p>
+            <p class="Advanced">Moderate</p>
             <p class="Type">Unity</p>
             <p class="Type">Android Development</p>
+            <p class="Type">Java</p>
+            <p class="Advanced">Beginner</p>
+            <p class="Type">JavaScript</p>
+            <p class="Type">Web Design</p>
         </div>
         <div class="currentprojects">
-            <p class="type" id="Platform">Choose a platform</p>
+            <p class="platform_text" id="Platform">Choose a platform</p>
             <div class="platform">
                 <button class="button_Web">Web</button>
                 <p class="slash">|</p>
@@ -55,21 +53,9 @@
                 <button id="back_button"> back</button>
             </div>
         </div>
-        <script>
-        var clipboard = new ClipboardJS('.discord-copy', {
-            text: function() {
-                return 'Maro#1980';
-            }
-        });
-
-        clipboard.on('success', function(e) {
-            console.log(e);
-        });
-
-        clipboard.on('error', function(e) {
-            console.log(e);
-        });
-        </script>
+        <button class="notification_text" id="notification_text">Notifications yo </button>
     </body>
+    <script src="clipboard.js"></script>
+    <script src="magical_power.js"></script>
 
 </html>
