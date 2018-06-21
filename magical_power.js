@@ -114,7 +114,7 @@ $(document).ready(function() {
 
     var clipboard = new ClipboardJS('#username', {
         text: function() {
-            return 'Maro#1980';
+            return 'Maro#0001';
         }
     });
 
