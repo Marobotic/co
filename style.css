@@ -173,18 +173,19 @@ button:active {
 .Skillscontent {
     justify-content: center;
     width: 70%;
-       
+
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     margin-left: 10px;
     margin-top: 30px;
     flex-wrap: wrap;
-    background-color: #A8A8A8;  
+    background-color: #A8A8A8;
     font-size: 25px;
     font-family: CaviarDreams;
     text-align: center;
 }
+
 .Skillscontent:hover {
-       box-shadow: 0px 0px 20px 7px #101010;
+    box-shadow: 0px 0px 20px 7px #101010;
 }
 
 .width_300 {
@@ -208,18 +209,21 @@ button:active {
 
 .Type {
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    margin-left: 10px;
+
     cursor: pointer;
+    color: #596D1B;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
 }
 
 .Type:hover {
-    font-size: 29px;
-    color: #596D1B;
+    background-color: #3F3F3E;
+    color: #D3D3D3;
 }
 
 .Type:active {
-    color: #3F3F3E;
+    background-color: #5C5C5C;
 }
 
 
@@ -286,10 +290,20 @@ button:active {
 }
 
 .notification_text {
+    margin-bottom: 3px;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+}
+
+.notification_div {
     padding: 20px;
     position: fixed;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    display: flex;
     bottom: 0;
     right: 10;
+    flex-direction: column-reverse;
+
 }
 
 @media only screen and (max-width:800px) {
