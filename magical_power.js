@@ -1,31 +1,16 @@
 $(document).ready(function() {
+    var txt1;
 
-    var Phrases = ["Rainbows!", "More rainbows!", "Inserting shady Russian code...", "Do you know da wae though?", "But can you do this?", "Come on guys, it's only $399!", "Spoiling Infinity wars...", "And the people whom died in infinity Wars are...", "SPIDERMAN IN SPACE? how cool is that!", "Initiating teamfights", "Report Teemo pls", "Please save Mercy T_T", "Puting pineapple on pizza"]
-    var top_text = Math.floor((Math.random() * 13));
-    console.log(top_text);
+    var Phrases = ["Rainbows!", "More rainbows!", "Inserting shady Russian code...", "Report Teemo pls", "Puting pineapple on pizza", "Subscribing to PewDiePie", "Unsubscribing to T-Series", "Bitch Lasanga!"]
+    var top_text = Math.floor((Math.random() * 8));
     document.getElementById("top_text").innerHTML = Phrases[top_text];
 
 
     $(".notification_text").hide();
-
-    $("#Discord").click(function(event) {
-
-
-    });
-
-
     $(".Echoes").click(function() {
         var url = "https://www.aioneotp.com/";
         window.open(url, '_blank');
 
-    });
-
-    $("#back_button").click(function(event) {
-        $("#Platform").text('Choose a platform');
-        $(".platform").show();
-        $("#back_button").hide();
-        $(".android").hide();
-        $(".web").hide();
     });
 
     $(".a_Spectrum").click(function(event) {
@@ -46,25 +31,33 @@ $(document).ready(function() {
 
     clipboard.on('success', function(e) {
         console.log(e);
-        $(".notification_text").stop().slideDown().text('Copied  to clipboard').delay(2000).slideUp();
+        $(".notification_div").append(txt1); // Append new elements
+        txt1 = "<button class='notification_text' id='notifcation'>Copied Maro#0001 </button>"; // Create text with HTML
+        $(".notification_text").delay(3500).slideUp();
 
     });
 
     clipboard.on('error', function(e) {
         console.log(e);
-        $(".notification_text").stop().slideDown().text('Something is not right...').delay(2000).slideUp();
+        $(".notification_div").append(txt1); // Append new elements
+        txt1 = "<button class='notification_text' id='notifcation'>Copying Failed </button>"; // Create text with HTML
+        $(".notification_text").delay(3500).slideUp();
 
     });
 
     clipboard2.on('success', function(e) {
         console.log(e);
-        $(".notification_text").stop().slideDown().text('Copied  to clipboard').delay(2000).slideUp();
+        $(".notification_div").append(txt1); // Append new elements
+        txt1 = "<button class='notification_text' id='notifcation'> Copied moakamusketeer@gmail.com</button>"; // Create text with HTML
+        $(".notification_text").delay(3500).slideUp();
 
     });
 
     clipboard2.on('error', function(e) {
         console.log(e);
-        $(".notification_text").stop().slideDown().text('Something is not right...').delay(2000).slideUp();
+        $(".notification_div").append(txt1); // Append new elements
+        txt1 = "<button class='notification_text' id='notifcation'>Copying Failed </button>"; // Create text with HTML
+        $(".notification_text").delay(3500).slideUp();
 
     });
 });
