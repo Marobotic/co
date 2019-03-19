@@ -1,11 +1,113 @@
 body {
-    background-color: #2a2a2a;
+    /*   background-color: #2a2a2a;*/
     margin: 0px;
     padding: 0px;
     margin-bottom: 150px;
-    width: 100%;
-    height: 100%;
+    /*    background: url('images/wallpaper.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    min-width: 100%;
+    min-height: 100%;
+    animation: colorchange 10s;
+    /* animation-name followed by duration in seconds*/
+    /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 10s;
+    /* Chrome and Safari */
+    animation-iteration-count: infinite;
+
+
 }
+
+@keyframes colorchange {
+    0% {
+        background: #7A7A7A;
+    }
+
+    10% {
+        background: #616161;
+    }
+
+    20% {
+        background: #4B4B4B;
+    }
+
+    30% {
+        background: #353535;
+    }
+
+    40% {
+        background: #1D1D1D;
+    }
+
+    50% {
+        background: #1D1D1D;
+    }
+
+    60% {
+        background: #353535;
+    }
+
+    70% {
+        background: #4B4B4B;
+    }
+
+    80% {
+        background: #616161;
+    }
+
+    100% {
+        background: #7A7A7A;
+    }
+}
+
+@-webkit-keyframes colorchange
+
+/* Safari and Chrome - necessary duplicate */
+    {
+    0% {
+        background: #7A7A7A;
+    }
+
+    10% {
+        background: #616161;
+    }
+
+    20% {
+        background: #4B4B4B;
+    }
+
+    30% {
+        background: #353535;
+    }
+
+    40% {
+        background: #1D1D1D;
+    }
+
+    50% {
+        background: #1D1D1D;
+    }
+
+    60% {
+        background: #353535;
+    }
+
+    70% {
+        background: #4B4B4B;
+    }
+
+    80% {
+        background: #616161;
+    }
+
+    100% {
+        background: #7A7A7A;
+    }
+
+}
+
 
 @font-face {
     font-family: CaviarDreams;
@@ -313,8 +415,12 @@ button:active {
 
     }
 
+    .top_text {
+        font-size: 35px;
+    }
+
     .Skillscontent {
-        font-size: 19px;
+   
 
     }
 
@@ -323,25 +429,22 @@ button:active {
     }
 
     .h1 {
-        font-size: 25px;
+        font-size: 10px;
     }
 
     .notification_text {
         padding: 20px;
-        position: fixed;
+        font-size: 18px;
         bottom: -10;
-        right: 30;
-        transform: scale(0.7);
+        left: 80;
+   
     }
 
     .Type {
         word-wrap: break-word;
     }
 
-    .Type:hover {
-        font-size: 22px;
 
-    }
 
     .mobile_margin {
         margin-bottom: 50px;
