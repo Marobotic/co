@@ -33,7 +33,7 @@ $(document).ready(function() {
         console.log(e);
         $(".notification_div").append(txt1); // Append new elements
         txt1 = "<button class='notification_text' id='notifcation'>Copied Maro#0001 </button>"; // Create text with HTML
-        $(".notification_text").delay(3500).slideUp();
+        $(".notification_text").delay(3500).remove();
 
     });
 
