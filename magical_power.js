@@ -1,63 +1,175 @@
 $(document).ready(function() {
-    var txt1;
-
-    var Phrases = ["Rainbows!", "More rainbows!", "Inserting shady Russian code...", "Report Teemo pls", "Puting pineapple on pizza", "Subscribing to PewDiePie", "Unsubscribing to T-Series", "Bitch Lasanga!"]
-    var top_text = Math.floor((Math.random() * 8));
-    document.getElementById("top_text").innerHTML = Phrases[top_text];
-
-
     $(".notification_text").hide();
-    $(".Echoes").click(function() {
-        var url = "https://www.aioneotp.com/";
-        window.open(url, '_blank');
+
+    $(".contact_button").click(function(event) {
+
+        document.getElementById('contact_div').scrollIntoView();
+
+    });
+    $(".bio_button").click(function(event) {
+
+        document.getElementById('summary').scrollIntoView();
+    });
+
+    $(".projects").click(function(event) {
+
+        document.getElementById('projects').scrollIntoView();
+    });
+
+    $(".skills").click(function(event) {
+
+        document.getElementById('skills').scrollIntoView();
+    });
+
+    $(function() {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 97) {
+                $(".side_bar").addClass('shrink');
+
+            } else {
+                $(".side_bar").removeClass("shrink");
+            }
+        });
+    });
+
+    $(".all").click(function(event) {
+        $("#one").fadeIn();
+        $("#two").fadeIn();
+        $("#three").fadeIn();
+        $("#four").fadeIn();
+        $("#five").fadeIn();
+        $("#six").fadeIn();
+        $("#seven").fadeIn();
+        $(".icon_parent").css("border", "2px solid transparent");
+        $(this).css("border", "2px solid rgba(var(--white), 1)");
 
     });
 
-    $(".a_Spectrum").click(function(event) {
-
-        $('a[href^="https://google.com"]').attr('target', '_blank')
-    });
-
-    var clipboard2 = new ClipboardJS('#email', {
-        text: function() {
-            return 'moakamusketeer@gmail.com';
-        }
-    });
-    var clipboard = new ClipboardJS('#username', {
-        text: function() {
-            return 'Maro#0001';
-        }
-    });
-
-    clipboard.on('success', function(e) {
-        console.log(e);
-        $(".notification_div").append(txt1); // Append new elements
-        txt1 = "<button class='notification_text' id='notifcation'>Copied Maro#0001 </button>"; // Create text with HTML
-        $(".notification_text").delay(3500).slideUp();
+    $(".java").click(function(event) {
+        $("#one").fadeIn();
+        $("#two").fadeIn();
+        $("#three").fadeIn();
+        $("#four").fadeIn();
+        $("#five").fadeOut();
+        $("#six").fadeOut();
+        $("#seven").fadeOut();
+        $(".icon_parent").css("border", "2px solid transparent");
+        $(this).css("border", "2px solid rgba(var(--white), 1)");
 
     });
+    $(".XML").click(function(event) {
+        $("#one").fadeIn();
+        $("#two").fadeIn();
+        $("#three").fadeIn();
+        $("#four").fadeIn();
+        $("#five").fadeOut();
+        $("#six").fadeOut();
+        $("#seven").fadeOut();
+        $(".icon_parent").css("border", "2px solid transparent");
+        $(this).css("border", "2px solid rgba(var(--white), 1)");
 
-    clipboard.on('error', function(e) {
-        console.log(e);
-        $(".notification_div").append(txt1); // Append new elements
-        txt1 = "<button class='notification_text' id='notifcation'>Copying Failed </button>"; // Create text with HTML
-        $(".notification_text").delay(3500).slideUp();
+    });
+    $(".Photoshop").click(function(event) {
+        $("#one").fadeIn();
+        $("#two").fadeIn();
+        $("#three").fadeIn();
+        $("#four").fadeIn();
+        $("#five").fadeIn();
+        $("#six").fadeOut();
+        $("#seven").fadeOut();
+        $(".icon_parent").css("border", "2px solid transparent");
+        $(this).css("border", "2px solid rgba(var(--white), 1)");
+    });
+    $(".Illustrator").click(function(event) {
+        $("#one").fadeIn();
+        $("#two").fadeIn();
+        $("#three").fadeIn();
+        $("#four").fadeIn();
+        $("#five").fadeIn();
+        $("#six").fadeIn();
+        $("#seven").fadeOut();
+        $(".icon_parent").css("border", "2px solid transparent");
+        $(this).css("border", "2px solid rgba(var(--white), 1)");
+    });
+    $(".HTML").click(function(event) {
+        $("#one").fadeOut();
+        $("#two").fadeOut();
+        $("#three").fadeOut();
+        $("#four").fadeIn();
+        $("#five").fadeIn();
+        $("#six").fadeOut();
+        $("#seven").fadeOut();
+        $(".icon_parent").css("border", "2px solid transparent");
+        $(this).css("border", "2px solid rgba(var(--white), 1)");
+
+    });
+    $(".JavaScript").click(function(event) {
+        $("#one").fadeOut();
+        $("#two").fadeOut();
+        $("#three").fadeOut();
+        $("#four").fadeIn();
+        $("#five").fadeIn();
+        $("#six").fadeOut();
+        $("#seven").fadeOut();
+        $(".icon_parent").css("border", "2px solid transparent");
+        $(this).css("border", "2px solid rgba(var(--white), 1)");
+    });
+    $(".CSS").click(function(event) {
+        $("#one").fadeOut();
+        $("#two").fadeOut();
+        $("#three").fadeOut();
+        $("#four").fadeIn();
+        $("#five").fadeIn();
+        $("#six").fadeOut();
+        $("#seven").fadeOut();
+        $(".icon_parent").css("border", "2px solid transparent");
+        $(this).css("border", "2px solid rgba(var(--white), 1)");
+
+    });
+    $(".Drawing").click(function(event) {
+        $("#one").fadeOut();
+        $("#two").fadeOut();
+        $("#three").fadeOut();
+        $("#four").fadeOut();
+        $("#five").fadeOut();
+        $("#six").fadeIn();
+        $("#seven").fadeOut();
+        $(".icon_parent").css("border", "2px solid transparent");
+        $(this).css("border", "2px solid rgba(var(--white), 1)");
+
+    });
+    $(".Photography").click(function(event) {
+        $("#one").fadeOut();
+        $("#two").fadeOut();
+        $("#three").fadeOut();
+        $("#four").fadeOut();
+        $("#five").fadeOut();
+        $("#six").fadeOut();
+        $("#seven").fadeIn();
+        $(".icon_parent").css("border", "2px solid transparent");
+        $(this).css("border", "2px solid rgba(var(--white), 1)");
+
 
     });
 
-    clipboard2.on('success', function(e) {
-        console.log(e);
-        $(".notification_div").append(txt1); // Append new elements
-        txt1 = "<button class='notification_text' id='notifcation'> Copied moakamusketeer@gmail.com</button>"; // Create text with HTML
-        $(".notification_text").delay(3500).slideUp();
-
-    });
-
-    clipboard2.on('error', function(e) {
-        console.log(e);
-        $(".notification_div").append(txt1); // Append new elements
-        txt1 = "<button class='notification_text' id='notifcation'>Copying Failed </button>"; // Create text with HTML
-        $(".notification_text").delay(3500).slideUp();
-
-    });
 });
+
+
+
+
+var txt1;
+
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    // pop_bottom_bubble_message("Copied to Clipboard");
+
+    $(".notification_div").append(txt1); // Append new elements
+    txt1 = "<button class='notification_text' id='notifcation'>Text copied to clipboard</button>"; // Create text with HTML
+    $(".notification_text").delay(3500).slideUp();
+}

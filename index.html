@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Marobotic PS</title>
+    <title>Maro Bot Personal Site</title>
     <!-- Adding styles -->
     <link rel="stylesheet" href="style.css">
     <!-- Enabling jquery-->
@@ -10,48 +10,137 @@
     <link rel="shortcut icon" href="favicon.ico">
     <!-- Supporting phones -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
 </head>
 
 <body>
-    <div class="flex-container noselect">
-       <h1 class="top_text" id="top_text">Inserting shady Russian code...</h1>
+    <div class="side_bar animate noselect" id="side_bar">
+        <button class="menu_button bio_button"> Summary</button>
+        <button class="menu_button skills"> Skills</button>
+        <button class="menu_button projects"> Projects</button>
+        <button class="menu_button contact_button"> Contact</button>
     </div>
-    <div class="main-content">
-        <div class="top_div_aboutme noselect">
-            <image class="discord-info noselect" src="images/maro.png" style="margin-right: 15px"> </image>
-            <p style="margin-top: 20px"> Maro Bot </p>
+    <!--Header image -->
+    <!-- About Me Window -->
+    <center>
+        <div class="about_me_window  noselect summary" id="summary" style="margin-top: 30px">
+            <div class="top_div_aboutme animate noselect">
+                <image class="discord-info noselect" src="images/maro.png" style="margin-right: 15px"> </image>
+                <div>
+                    <p style="margin-top: 20px"> Maro Bot </p>
+                    <p>UI/UX Designer / Programmer </p>
+                    <p style="text-align: left; font-size: 20px"> <i class=" blue fad fa-file-alt"></i> Summary:</p>
+                    <p style="text-align: left; font-size: 18px"> Hello, my name is Maro and I am an UI/UX Designer from Egypt, currently I am in art student at Pharos University Majoring Graphics Design, Logo Design and Advertisment. I specialize in making things pretty and modern! </p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="main-content">
-        <!--   <button class="Echoes noselect">Aion 3.9: Echoes Of The Past</button> -->
-        <div class="Skillscontent width_300">
-             <p class="Advanced noselect">Personal Skills</p>
-            <p class="Type noselect">Adobe Photoshop </p>
-            <p class="Type noselect">Adobe Illustrator </p>
-            <p class="Type noselect">Java </p>
-            <p class="Type noselect">JavaScript </p>
-            <p class="Type noselect">HTML </p>
-            <p class="Type noselect">XML </p>
-            <p class="Type noselect">Web Development </p>
+        <div class="about_me_window  noselect skills_div" id="skills" style="margin-bottom: 30px;">
+            <div class="top_div_aboutme animate noselect">
+                <div class="window_details">
+                    <p style="text-align: left; font-size: 20px"> <i class="blue fas fa-award"></i> Skills:</p>
+                    <div class="icon_list_parent">
+                        <div class="icon_parent all">
+                            <i class="icon fas fa-layer-group"></i>
+                            <p class="icon_text"> All</p>
+                        </div>
+                        <div class="icon_parent java">
+                            <i class="icon fab fa-java"></i>
+                            <p class="icon_text"> Java</p>
+                        </div>
+                        <div class="icon_parent XML">
+                            <i class="icon fas fa-file-code"> </i>
+                            <p class="icon_text">XML </p>
+                        </div>
+                        <div class="icon_parent  Photoshop">
+                            <i class="icon fab fa-adobe"></i>
+                            <p class="icon_text"> Adobe Photoshop</p>
+                        </div>
+                        <div class="icon_parent  Illustrator">
+                            <i class="icon fab fa-adobe"></i>
+                            <p class="icon_text">Adobe Illustrator </p>
+                        </div>
+                        <div class="icon_parent HTML">
+                            <i class="icon fab fa-html5"></i>
+                            <p class="icon_text"> HTML</p>
+                        </div>
+                        <div class="icon_parent JavaScript">
+                            <i class="icon fab fa-js-square"></i>
+                            <p class="icon_text"> JavaScript </p>
+                        </div>
+                        <div class="icon_parent CSS">
+                            <i class="icon fab fa-css3-alt"></i>
+                            <p class="icon_text"> CSS </p>
+                        </div>
+                        <div class="icon_parent Drawing">
+                            <i class="icon fad fa-pencil-alt"></i>
+                            <p class="icon_text"> Drawing </p>
+                        </div>
+                        <div class="icon_parent Photography">
+                            <i class="icon fad fa-camera"></i>
+                            <p class="icon_text"> Photography </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="Skillscontent width_300">
-            <p class="Advanced noselect">Projects / Portfolio</p>
-            <p class="Type noselect Echoes">Aion. 3.9 EOTP</p>
-            <p class="Type noselect">Spectrum</p>
+        <!-- Card UI -->
+        <div class="main-content projects_div  project_list" id="projects" style=" display: flex; margin-top: 10px">
+            <div class="small_card" id="one">
+                <p class=" card_title noselect">Spectrum</p>
+                <image src="images/spectrum.gif" style="display: block; width: 100%;"> </image>
+                <a href="https://play.google.com/store/apps/details?id=com.robotics.spectrum" target="_about"> <button class="see_more animate" style="width: 100%; height: 30px;"> Show More <i class="fas fa-external-link"></i> </button></a>
+            </div>
+            <div class="small_card" id="two">
+                <p class=" card_title noselect">Tic Tac Toe</p>
+                <image src="images/tictactoe.png" style="display: block; width: 100%;"> </image>
+                <a href="https://play.google.com/store/apps/details?id=roboticsgt0.tictactoe" target="_about"> <button class="see_more animate" style="width: 100%; height: 30px;"> Show More <i class="fas fa-external-link"></i> </button></a>
+            </div>
+            <div class="small_card" id="three">
+                <p class=" card_title noselect">Hangman</p>
+                <image src="images/hangman.png" style="display: block; width: 100%;"> </image>
+                <a href="https://play.google.com/store/apps/details?id=roboticsgt0.hangman" target="_about"> <button class="see_more animate" style="width: 100%; height: 30px;"> Show More <i class="fas fa-external-link"></i> </button></a>
+            </div>
+            <div class="small_card" id="four">
+                <p class=" card_title noselect">Aion: Echoes Of The Past</p>
+                <image src="images/eotp.png" style="display: block; width: 100%;"> </image>
+                <a href="https://marobotic.github.io/Site-Selector/" target="_about"> <button class="see_more animate" style="width: 100%; height: 30px;"> Show More <i class="fas fa-external-link"></i> </button></a>
+            </div>
+            <div class="small_card" id="five">
+                <p class=" card_title noselect">FuzzNook</p>
+                <image src="images/fuzznook.png" style="display: block; width: 100%;"> </image>
+                <a href="https://www.fuzznook.com" target="_about"> <button class="see_more animate" style="width: 100%; height: 30px;"> Show More <i class="fas fa-external-link"></i> </button> </a>
+            </div>
+            <div class="small_card" id="six">
+                <p class=" card_title noselect">Drawing</p>
+                <image src="images/drawing.png" style="display: block; width: 100%;"> </image>
+                <a href="https://www.deviantart.com/moakamusketeer" target="_about"> <button class="see_more animate" style="width: 100%; height: 30px;"> Show More <i class="fas fa-external-link"></i> </button></a>
+            </div>
+            <div class="small_card" id="seven">
+                <p class=" card_title noselect">Photography</p>
+                <image src="images/photography.png" style="display: block; width: 100%;"> </image>
+                <a href="https://www.deviantart.com/moakamusketeer" target="_about"> <button class="see_more animate" style="width: 100%; height: 30px;"> Show More <i class="fas fa-external-link"></i> </button></a>
+            </div>
         </div>
-    </div>
-    <div class="main-content">
-        <div class="Skillscontent width_600 mobile_margin">
-            <p class="Advanced noselect">Contact Info</p>
-            <p id="username" class="Type noselect">Discord: Maro#0001 </p>
-            <p id="email" class="Type noselect">Email: moakamusketeer@gmail.com</p>
+        <!-- Card UI -->
+        <div class="about_me_window contact_div" id="contact_div">
+            <div class="main-content top_div_aboutme animate " style="margin-bottom: 30px;">
+                <div class="window_details ">
+                    <p class="Advanced noselect">Contact Info</p>
+                    <div class="Type  contact_info" onclick="copyToClipboard('#discord')">
+                        <i class="contact_icons fab fa-discord"></i>
+                        <p id="discord" class="contact_type"> Maro#0312 </p>
+                    </div>
+                    <div class="Type  contact_info" onclick="copyToClipboard('#email')">
+                        <i class="contact_icons fas fa-at"></i>
+                        <p id="email" class="contact_type"> moakamusketeer@gmail.com</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="notification_div"> <button class="notification_text" id="notification_text">Notifications yo </button></div>
-    
+    </center>
+    <!-- About Me Window -->
+    <div class="notification_div"> <button class="notification_text" id="notification_text">Text copied to clipboard</button></div>
 </body>
-
-<script src="clipboard.js"></script>
 <script src="magical_power.js"></script>
 
 </html>
