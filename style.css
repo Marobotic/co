@@ -562,7 +562,7 @@ h1 {
 
 @media only screen and (max-width: 600px) {
     .top_div_aboutme {
-        width: 85%;
+        width: 90%;
     }
 
     .project_list {
@@ -575,5 +575,11 @@ h1 {
 
     .window_details {
         width: unset;
+    }
+    .menu_button{
+        font-size: 18px;
+    }
+    .top_div_aboutme{
+        padding: 10px;
     }
 }
