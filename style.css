@@ -211,6 +211,8 @@ h1 {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-left: 0px;
+    margin-top: 0px;
+    border-radius:  10px 10px 0px 0px;
     width:  100%;
 }
 
@@ -408,7 +410,7 @@ h1 {
 .top_div_aboutme {
     background: #333232;
     border-radius: 20px;
-    padding: 20px;
+
     color: #F1F1F1;
 }
 
