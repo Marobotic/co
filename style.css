@@ -207,10 +207,11 @@ h1 {
 .advanced {
     color: #F1F1F1;
     text-align: center;
-    background-color: #2B2747;
+    background-color: #1a50ad;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-left: 0px;
+    width:  100%;
 }
 
 .skills_container {
@@ -225,7 +226,7 @@ h1 {
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     margin-left: 10px;
     background-color: #333232;
-    max-width: 800px;
+    max-width: 860px;
 
 }
 
@@ -392,14 +393,16 @@ h1 {
     font-size: 20px;
     color: #000;
     background: rgba(255, 255, 255, 0.6);
-    padding: 10px;
+    padding: 5px;
     margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .about_me_window {
     display: flex;
     justify-content: center;
-    max-width: 800px;
+    max-width: 860px;
 }
 
 .top_div_aboutme {
@@ -418,7 +421,8 @@ h1 {
 }
 
 .window_details {
-    width: 750px;
+display: flex;
+flex-direction: row;
     justify-content: center;
 }
 
@@ -528,19 +532,24 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 860px;
     justify-content: left;
 
 }
 
 .small_card {
     max-width: 256px;
+    padding: 10px;
     background: #333232;
     border-radius: 15px;
     overflow: hidden;
     position: relative;
     margin-left: 10px;
     margin-bottom: 10px;
+}
+
+.small_card img {
+    border-radius: 10px 10px 0px 0px;
 }
 
 .see_more {
@@ -576,10 +585,30 @@ h1 {
     .window_details {
         width: unset;
     }
-    .menu_button{
+
+    .menu_button {
         font-size: 18px;
     }
-    .top_div_aboutme{
+
+    .top_div_aboutme {
         padding: 10px;
     }
+}
+
+.skill_bubble_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+}
+
+.skill_bubble {
+    background-color: #474646;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: -5px;
+    font-size: 16px;
+    margin-left: 5px;
 }
