@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1456px) {
     p {
         font-size: 14px;
     }
@@ -27,8 +27,9 @@
         margin-bottom: 26px;
         min-width: 300px;
         min-height: 600px;
-        max-height: 600px;
-        margin-right: 0px;
+      
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .width {
@@ -348,8 +349,8 @@
     justify-content: center;
 }
 .small_card {
-    max-width: 300px;
-    height: 440px;
+    max-width: 500px;
+    height: auto;
     background-color: rgba(18, 20, 31, 0.8);
     border-radius: 25px;
     overflow: hidden;
@@ -388,5 +389,44 @@ margin-right: 0px;
     margin-bottom: 5px;
     color: #c2c2c2;
     cursor: pointer;
+}
+
+
+
+.pfp{
+    width: 80% !important;
+   
+}
+.pfp_div{
+   justify-content: center;
+    align-self: center;
+    display: flex;
+    align-content: center;  
+    margin-top: 50px;
+}
+.myname>p{
+    font-size: 30px !important;
+    
+}
+.myname1{
+    margin-left: 56px;
+}
+.myname2{
+    margin-left: 26px !important;
+}
+.contact_title{
+    text-align: center;
+}
+.profile_info_container{
+    margin-top: 0px;
+}
+.name_class_container{
+    margin-bottom: 26px
+}
+.class_container{
+   display: flex;
+  
+   align-content: left;
+   margin-left: 26px;
 }
 }

@@ -12,22 +12,22 @@
     <meta name="keywords" content="Marwan's Portfolio">
     <meta name="theme-color" content="#63a7ff">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
 </head>
 <div class="sexy_container2" style="flex-wrap: nowrap;">
     <div class="name_class_container">
         <div style="display: flex; flex-direction: column;">
-            <div class="" style="margin-left: 0px; margin-right: 0px; margin-top: 150px; ">
-                <img style="width: 400px; height: auto;" src="images/maro.png" tooltip="Asmodian"></div>
+            <div class="pfp_div" style=" ">
+                <img  class="pfp" style="" src="images/maro.png"></div>
             <div style="display: flex; flex-direction:column;">
-                <div style="display: flex; flex-direction:row;">
-                    <p style=" margin-bottom: 0px; margin-right: 26px; width: auto;" class="profile_name">
+                <div class="myname" style="display: flex; flex-direction:row;">
+                    <p style=" margin-bottom: 0px; margin-right: 26px; width: auto;" class="profile_name myname1">
                         Im </p>
                     <p style=" margin-left: 0px; margin-right: 0px; margin-bottom: 0px; color: #E55757" class="profile_name">
                         Marwan </p>
                 </div>
-                <div style="display: flex; flex-direction:row;">
-                    <p style=" margin-bottom: 0px; margin-top: 0px; margin-left: -30px; margin-right: 26px; width: auto; font-size: 35px;" class="profile_name">
+                <div  class="myname" style="display: flex; flex-direction:row;">
+                    <p style=" margin-bottom: 0px; margin-top: 0px; margin-left: -30px; margin-right: 26px; width: auto; font-size: 35px;" class="profile_name myname2">
                         & I am </p>
                     <p style=" margin-left: 0px; margin-right: 0px; margin-top: 0px; margin-bottom: 0px; font-size: 35px; color: #E55757" class="profile_name">
                         A Frontend developer </p>
@@ -36,19 +36,35 @@
                             & I am a web developer </p> -->
             </div>
         </div>
-        <h1 style="color: white; margin-top: 50px;"> Skills: </h1>
+        <h1 style="color: white; margin-top: 50px; color: #E55757;" class="contact_title"> Skills: </h1>
         <div class="class_container">
-            <div class="class_icon"> <img style="width: 50px;" src="images/photoshop.png" tooltip="Gladiator"></div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/illustrator.png" tooltip="Gladiator"></div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/html.png" tooltip="Gladiator"></div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/javascript.png" tooltip="Gladiator"></div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/css.png" tooltip="Gladiator"></div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/xml.png" tooltip="Gladiator"></div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/php.png" tooltip="Gladiator"></div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/mysql.png" tooltip="Gladiator"></div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/java.png" tooltip="Gladiator"></div>
+            <div class="class_icon"> <img style="width: 50px;" src="images/photoshop.png" tooltip="photoshop">
+                <span class="coupontooltip"> Adobe Photoshop</span></div>
+            <div class="class_icon"> <img style="width: 50px;" src="images/illustrator.png" tooltip="illustrator">
+                <span class="coupontooltip"> Adobe Illustrator</span></div>
+            <div class="class_icon"> <img style="width: 50px;" src="images/html.png" tooltip="html">
+                <span class="coupontooltip"> HTML</span>
+            </div>
+            <div class="class_icon"> <img style="width: 50px;" src="images/javascript.png" tooltip="javascript">
+                <span class="coupontooltip">JavaScript</span>
+            </div>
+            <div class="class_icon"> <img style="width: 50px;" src="images/css.png" tooltip="css">
+                <span class="coupontooltip"> CSS</span>
+            </div>
+            <div class="class_icon"> <img style="width: 50px;" src="images/xml.png" tooltip="xml">
+                <span class="coupontooltip"> XML</span>
+            </div>
+            <div class="class_icon"> <img style="width: 50px;" src="images/php.png" tooltip="php">
+                <span class="coupontooltip">PHP</span>
+            </div>
+            <div class="class_icon"> <img style="width: 50px;" src="images/mysql.png" tooltip="mysql">
+                <span class="coupontooltip"> MySQL</span>
+            </div>
+            <div class="class_icon"> <img style="width: 50px;" src="images/java.png" tooltip="java">
+                <span class="coupontooltip"> Java</span>
+            </div>
         </div>
-        <h1 style="color: white; margin-top: 50px;"> Contact me: </h1>
+        <h1 style="color: white; margin-top: 50px; color: #E55757;" class="contact_title"> Contact me: </h1>
         <div class="name_class_container">
             <div style="display: flex; flex-direction: column;">
                 <a href="mailto:moakamusketeer@gmail.com">
@@ -62,9 +78,28 @@
                         <p class="arrow"> &gt;</p>
                     </div>
                 </a>
+                <!-- <i class="fa-brands fa-deviantart"></i> -->
                 <a>
+                    <div class="menu_button" onclick="copyToClipboard('#discord')">
+                        <p id="discord" class="menu_text"> <i class="fa-brands fa-discord"></i> mrbotic </p>
+                        <p class="arrow"> &gt;</p>
+                    </div>
+                </a>
+                <a href="https://www.deviantart.com/moakamusketeer" target="_blank">
                     <div class="menu_button">
-                        <p class="menu_text"> mrbotic</p>
+                        <p class="menu_text"> <i class="fa-brands fa-deviantart"></i> moakamusketeer </p>
+                        <p class="arrow"> &gt;</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/marwan-hamada-a68843131/" target="_blank">
+                    <div class="menu_button">
+                        <p class="menu_text"> <i class="fa-brands fa-linkedin"></i></i> Marwan Hamada </p>
+                        <p class="arrow"> &gt;</p>
+                    </div>
+                </a>
+                <a href="https://github.com/Marobotic" target="_blank">
+                    <div class="menu_button">
+                        <p class="menu_text"> <i class="fa-brands fa-github"></i> Marobotic </p>
                         <p class="arrow"> &gt;</p>
                     </div>
                 </a>
@@ -78,7 +113,7 @@
     </div>
     <div class="profile_info_container">
         <div class="" style="margin-left: 70px;">
-            <p class="" style="text-transform: capitalize; font-size: 36; text-align: center; margin-top: 10px; margin-left: -20px;  color: #E55757;">
+            <p class="contact_title"style="text-transform: capitalize; font-size: 36; text-align: center; margin-top: 10px; margin-left: -20px;  color: #E55757;">
                 My Projects
             </p>
         </div>
@@ -101,7 +136,20 @@
                         <p> Game Launcher android App</p>
                     </div>
                     <div class="project_button">
-                        <button> See More ➜</button>
+                        <a href="https://marobotic.github.io/Spectrum/" target="_blank">
+                            <button> See More ➜</button> </a>
+                    </div>
+                </div>
+                <div class="small_card" id="one">
+                    <image src="images/urban.png" style="display: block; width: 100%;  height: auto !important;   border-radius: 10px 10px 0px 0px;"> </image>
+                    <div class="black_taint"> </div>
+                    <div class="project_banner">
+                        <p class="project_name"> The Urban Crew</p>
+                        <p> Voice assistance hiring website</p>
+                    </div>
+                    <div class="project_button">
+                        <a href="https://marobotic.github.io/urban/" target="_blank">
+                            <button> See More ➜</button> </a>
                     </div>
                 </div>
                 <div class="small_card" id="two">
@@ -111,7 +159,8 @@
                         <p> Video game on the playstore</p>
                     </div>
                     <div class="project_button">
-                        <button> See More ➜</button>
+                        <a href="https://marobotic.github.io/Spectrum/" target="_blank">
+                            <button> See More ➜</button> </a>
                     </div>
                 </div>
                 <div class="small_card" id="three">
@@ -120,8 +169,8 @@
                         <p class="project_name"> Hangman</p>
                         <p> Video game on the playstore</p>
                     </div>
-                    <div class="project_button">
-                        <button> See More ➜</button>
+                    <div class="project_button"> <a href="https://marobotic.github.io/Spectrum/" target="_blank">
+                            <button> See More ➜</button> </a>
                     </div>
                 </div>
                 <div class="small_card" id="four">
@@ -131,17 +180,19 @@
                         <p> Website for an MMORPG</p>
                     </div>
                     <div class="project_button">
-                        <button> See More ➜</button>
+                        <a href="https://marobotic.github.io/AEOTPC/" target="_blank">
+                            <button> See More ➜</button> </a>
                     </div>
                 </div>
-                <div class="small_card" id="four">
+                <div class="small_card">
                     <image src="images/eotp.png" style="display: block; width: 100%; height: auto !important;  "> </image>
                     <div class="project_banner">
                         <p class="project_name"> Aion: Echoes Of The Past</p>
                         <p> Website for an MMORPG</p>
                     </div>
                     <div class="project_button">
-                        <button> See More ➜</button>
+                        <a href="https://marobotic.github.io/AEOTP/" target="_blank">
+                            <button> See More ➜</button> </a>
                     </div>
                 </div>
                 <div class="small_card" id="five">
@@ -151,7 +202,8 @@
                         <p> Website for an MMORPG</p>
                     </div>
                     <div class="project_button">
-                        <button> See More ➜</button>
+                        <a href="https://marobotic.github.io/AEOTP/" target="_blank">
+                            <button> See More ➜</button> </a>
                     </div>
                 </div>
                 <div class="small_card" id="five">
@@ -161,7 +213,8 @@
                         <p> Wordpress website to help cats with FIP</p>
                     </div>
                     <div class="project_button">
-                        <button> See More ➜</button>
+                        <a href="https://chariotforcats.com" target="_blank">
+                            <button> See More ➜</button> </a>
                     </div>
                 </div>
                 <div class="small_card" id="five">
@@ -171,7 +224,8 @@
                         <p> Social media platform</p>
                     </div>
                     <div class="project_button">
-                        <button> See More ➜</button>
+                        <a href="https://fuzznook.com" target="_blank">
+                            <button> See More ➜</button> </a>
                     </div>
                 </div>
                 <div class="small_card" id="five">
@@ -181,7 +235,8 @@
                         <p> Wordpress website that offers travel service for pets</p>
                     </div>
                     <div class="project_button">
-                        <button> See More ➜</button>
+                        <a href="https://petjetpals.com" target="_blank">
+                            <button> See More ➜</button> </a>
                     </div>
                 </div>
             </div>
@@ -226,176 +281,41 @@
     </div>
 </div>
 </div>
+<div id="snackbar">Mrbotic copied to clipboard </div>
 <style>
-.text_padding {
-    padding-top: 20px;
-    margin-left: 50px;
-}
-
-.project_list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 860px;
-    justify-content: left;
-
-}
-
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    flex-direction: row;
-    margin-left: 36px;
-}
-
-.small_card {
-    max-width: 370px;
-    cursor: pointer;
-    background: #333232;
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-right: 0px;
-    height: unset !important;
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-}
-
-
-
-.small_card img {
-    border-radius: 10px 10px 0px 0px;
-}
-
-.see_more {
-    position: absolute;
-    bottom: 0;
-    background: 0;
-    outline: 0;
-    border: 0;
-    left: 0;
-    color: #c2c2c2;
-    cursor: pointer
-}
-
-.see_more:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-
-}
-
-.card_title {
-    text-align: center;
-    font-size: 20px;
-    color: #000;
-
-    padding: 5px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-radius: 0px 0px 10px 10px;
-}
-
-.skill_bubble_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    margin-bottom: 40px;
-}
-
-.skill_bubble {
-    background-color: #474646;
-    color: #fff;
-    border-radius: 25px;
-    padding: 10px;
-    margin-bottom: -5px;
-    font-size: 16px;
-    margin-left: 5px;
-
-}
-
-.project_banner {
-    position: absolute;
-    width: 300px;
-    opacity: 0;
-    top: 50%;
-    left: 50%;
-    overflow: hidden;
-    transform: translateX(-50%) translateY(-50%);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    transform: translateY(1px);
-    transition: transform 0.6s;
-}
-
-.project_banner>p {
-
-    font-family: CaviarDreams;
-    user-select: none;
-    text-align: center;
-}
-
-.small_card:hover .project_banner {
-    opacity: 1;
-    width: 300px;
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    transform: translate(-150px, -80px);
-
-}
-
-.small_card img {
-    filter: brightness(100%);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-}
-
-.small_card:hover img {
-    filter: brightness(10%);
-}
-
-.project_button {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    overflow: hidden;
-    width: 0px;
-
-}
-
-.project_button button {
-    width: 130px;
-    height: 30px;
-    margin-left: 30px;
-    border-radius: 12px;
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff;
-    border: 0;
-
-}
-
-.project_button button:hover {
-    background-color: #E55757;
-}
-
-
-.small_card:hover .project_button {
-
-    width: 150px;
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-}
-
-.project_name {
-    font-size: 30px;
-
-    margin-bottom: 0px;
-}
 </style>
 </body>
+<script>
+var tooltip = document.querySelectorAll('.coupontooltip');
+
+document.addEventListener('mousemove', fn, false);
+
+function fn(e) {
+    for (var i = tooltip.length; i--;) {
+        tooltip[i].style.left = e.pageX + 'px';
+        tooltip[i].style.top = e.pageY + 'px';
+    }
+}
+
+var txt1;
+
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    // pop_bottom_bubble_message("Copied to Clipboard");
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function() { x.className = x.className.replace("show", ""); }, 3000);
+
+
+    $(".notification_div").append(txt1); // Append new elements
+    txt1 = "<button class='notification_text' id='notifcation'>Text copied to clipboard</button>"; // Create text with HTML
+    $(".notification_text").delay(3500).slideUp();
+}
+</script>
 
 </html>

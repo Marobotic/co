@@ -76,9 +76,11 @@ ul.rtabs li {
     padding: 0;
     display: inline;
 }
+
 li {
     color: white;
 }
+
 ul.rtabs li a {
     padding: 0 10px;
     /* It determines tab width */
@@ -1234,13 +1236,13 @@ img {
 
 .schedule_card {
     min-height: 800px;
-  
+
     border-radius: 15px;
     width: 575px;
     background-color: rgba(18, 20, 31, 0.8);
-overflow: hidden;
+    overflow: hidden;
     margin-right: 26px;
-padding-right: 26px;
+    padding-right: 26px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -2182,7 +2184,7 @@ input:hover {
 }
 
 .card_title {
-  
+
     padding-bottom: 15px;
     padding-top: 0px;
     margin-top: 0px;
@@ -2444,7 +2446,7 @@ input:hover {
     text-overflow: ellipsis;
     overflow: hidden;
     margin: 100px 0px 100px 0px;
-    text-transform: capitalize;   
+    text-transform: capitalize;
     font-family: CaviarDreams !important;
 }
 
@@ -2453,7 +2455,7 @@ input:hover {
     flex-direction: row;
     justify-content: left;
 
- 
+
     flex-wrap: wrap;
     max-width: 450px;
 
@@ -2609,7 +2611,7 @@ input:hover {
 
 .menu_text {
     margin-top: 25px;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 26px;
 }
 
@@ -3353,7 +3355,7 @@ body {
     padding: 5px;
     padding-bottom: 0.1px;
     padding-top: 0.1px;
-margin-bottom: 10px;
+    margin-bottom: 10px;
     background-color: #0a0d16;
     border-radius: 15px;
     /*border-top: solid 7px #151b2e*/
@@ -3366,6 +3368,274 @@ margin-bottom: 10px;
 
 }
 
-.paypal_button{
-    width:  200px;
+.paypal_button {
+    width: 200px;
+}
+
+
+
+/*New CSS (do not delete)*/
+.text_padding {
+    padding-top: 20px;
+    margin-left: 50px;
+}
+
+.project_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 860px;
+    justify-content: left;
+
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-direction: row;
+    margin-left: 36px;
+}
+
+.small_card {
+    max-width: 370px;
+    cursor: pointer;
+    background: #333232;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    height: unset !important;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+
+
+.small_card img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.see_more {
+    position: absolute;
+    bottom: 0;
+    background: 0;
+    outline: 0;
+    border: 0;
+    left: 0;
+    color: #c2c2c2;
+    cursor: pointer
+}
+
+.see_more:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+
+}
+
+.card_title {
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.skill_bubble_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+}
+
+.skill_bubble {
+    background-color: #474646;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: -5px;
+    font-size: 16px;
+    margin-left: 5px;
+
+}
+
+.project_banner {
+    position: absolute;
+    width: 300px;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    transform: translateY(1px);
+    transition: transform 0.6s;
+}
+
+.project_banner>p {
+
+    font-family: CaviarDreams;
+    user-select: none;
+    text-align: center;
+}
+
+.small_card:hover .project_banner {
+    opacity: 1;
+    width: 300px;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    transform: translate(-150px, -80px);
+
+}
+
+.small_card img {
+    filter: brightness(100%);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.small_card:hover img {
+    filter: brightness(10%);
+}
+
+.project_button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    overflow: hidden;
+    width: 0px;
+
+}
+
+.project_button button {
+    width: 130px;
+    height: 30px;
+    margin-left: 30px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: 0;
+
+}
+
+.project_button button:hover {
+    background-color: #E55757;
+}
+
+
+.small_card:hover .project_button {
+
+    width: 150px;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.project_name {
+    font-size: 30px;
+
+    margin-bottom: 0px;
+}
+
+.coupontooltip {
+    display: none;
+    background: #C8C8C8;
+    margin-left: 28px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+
+}
+
+.class_icon:hover .coupontooltip {
+    display: block;
+}
+
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+.pfp {
+    width: 400px;
+    height: auto;
+}
+
+.pfp_div {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 150px;
 }
