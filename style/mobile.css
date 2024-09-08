@@ -406,6 +406,7 @@ margin-right: 0px;
 }
 .myname>p{
     font-size: 30px !important;
+    text-wrap: nowrap;
     
 }
 .myname1{
