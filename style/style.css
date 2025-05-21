@@ -652,3 +652,14 @@
       font-size: 32px;
       color: white;
       cursor: pointer;}
+
+      .hidden {
+    display: none;
+}
+
+#status-message {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff5722;
+    text-align: center;
+}
