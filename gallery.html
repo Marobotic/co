@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwan | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <!-- SEO info -->
+    <meta property="og:title" content="Marwan's Portfolio">
+    <meta name="keywords" content="Marwan's Portfolio">
+    <meta name="theme-color" content="#63a7ff">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+    <!-- Header from index.html -->
+    <header>
+        <a href="#" class="logo">Marwan</a>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery" id="gallery">
+            <img src="Portfolio/image (1).jpg" alt="Art 1">
+            <img src="Portfolio/image (2).jpg" alt="Art 2">
+            <img src="Portfolio/image (3).jpg" alt="Art 3">
+            <img src="Portfolio/image (4).jpg" alt="Art 4">
+            <img src="Portfolio/image (5).jpg" alt="Art 5">
+            <img src="Portfolio/image (6).jpg" alt="Art 6">
+            <img src="Portfolio/image (7).jpg" alt="Art 7">
+            <img src="Portfolio/image (8).jpg" alt="Art 8">
+            <img src="Portfolio/image (9).jpg" alt="Art 9">
+            <img src="Portfolio/image (10).jpg" alt="Art 10">
+            <img src="Portfolio/image (11).jpg" alt="Art 11">
+            <img src="Portfolio/image (12).jpg" alt="Art 12">
+            <img src="Portfolio/image (13).jpg" alt="Art 13">
+            <img src="Portfolio/image (14).jpg" alt="Art 14">
+            <img src="Portfolio/image (15).jpg" alt="Art 15">
+            <img src="Portfolio/image (16).jpg" alt="Art 16">
+            <img src="Portfolio/image (17).jpg" alt="Art 17">
+            <img src="Portfolio/image (18).jpg" alt="Art 18">
+            <img src="Portfolio/image (19).jpg" alt="Art 19">
+            <img src="Portfolio/image (20).jpg" alt="Art 20">
+            <img src="Portfolio/image (21).jpg" alt="Art 21">
+            <img src="Portfolio/image (22).jpg" alt="Art 22">
+            <img src="Portfolio/image (23).jpg" alt="Art 23">
+        </section>
+        <div class="lightbox" id="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="" alt="Preview">
+        </div>
+    </main>
+    <!-- Footer from index.html -->
+    <footer>
+        <p>&copy; 2023 Marwan. All rights reserved.</p>
+    </footer>
+    <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    document.querySelectorAll('.gallery img').forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightbox.style.display = 'flex';
+        });
+    });
+
+    function closeLightbox() {
+        lightbox.style.display = 'none';
+    }
+    </script>
+</body>
+
+</html>

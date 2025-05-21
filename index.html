@@ -1,288 +1,540 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Marwan's Portfolio</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Marwan's Portfolio">
-    <link href="images/favicon.ico" rel="shortcut icon">
+    <title>Marwan | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+        <link href="images/favicon.ico" rel="shortcut icon">
     <link href="style/style.css" rel="stylesheet" type="text/css">
-    <link href="style/mobile.css" rel="stylesheet" type="text/css">
+    <!-- SEO info -->
+    <meta property="og:title" content="Marwan's Portfolio">
     <meta name="keywords" content="Marwan's Portfolio">
     <meta name="theme-color" content="#63a7ff">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+
 </head>
-<div class="sexy_container2" style="flex-wrap: nowrap;">
-    <div class="name_class_container">
-        <div style="display: flex; flex-direction: column;">
-            <div class="pfp_div" style=" ">
-                <img  class="pfp" style="" src="images/maro.png"></div>
-            <div style="display: flex; flex-direction:column;">
-                <div class="myname" style="display: flex; flex-direction:row;">
-                    <p style=" margin-bottom: 0px; margin-right: 26px; width: auto;" class="profile_name myname1">
-                        Im </p>
-                    <p style=" margin-left: 0px; margin-right: 0px; margin-bottom: 0px; color: #E55757" class="profile_name">
-                        Marwan </p>
-                </div>
-                <div  class="myname" style="display: flex; flex-direction:row;">
-                    <p style=" margin-bottom: 0px; margin-top: 0px; margin-left: -30px; margin-right: 26px; width: auto; font-size: 35px;" class="profile_name myname2">
-                        & I am </p>
-                    <p style=" margin-left: 0px; margin-right: 0px; margin-top: 0px; margin-bottom: 0px; font-size: 35px; color: #E55757" class="profile_name myname3">
-                        A Frontend developer </p>
-                </div>
-                <!-- <p style=" margin-top: 0px;" class="profile_name">
-                            & I am a web developer </p> -->
-            </div>
-        </div>
-        <h1 style="color: white; margin-top: 50px; color: #E55757;" class="contact_title"> Skills: </h1>
-        <div class="class_container">
-            <div class="class_icon"> <img style="width: 50px;" src="images/photoshop.png" tooltip="photoshop">
-                <span class="coupontooltip"> Adobe Photoshop</span></div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/illustrator.png" tooltip="illustrator">
-                <span class="coupontooltip"> Adobe Illustrator</span></div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/html.png" tooltip="html">
-                <span class="coupontooltip"> HTML</span>
-            </div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/javascript.png" tooltip="javascript">
-                <span class="coupontooltip">JavaScript</span>
-            </div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/css.png" tooltip="css">
-                <span class="coupontooltip"> CSS</span>
-            </div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/xml.png" tooltip="xml">
-                <span class="coupontooltip"> XML</span>
-            </div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/php.png" tooltip="php">
-                <span class="coupontooltip">PHP</span>
-            </div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/mysql.png" tooltip="mysql">
-                <span class="coupontooltip"> MySQL</span>
-            </div>
-            <div class="class_icon"> <img style="width: 50px;" src="images/java.png" tooltip="java">
-                <span class="coupontooltip"> Java</span>
-            </div>
-        </div>
-        <h1 style="color: white; margin-top: 50px; color: #E55757;" class="contact_title"> Contact me: </h1>
-        <div class="name_class_container">
-            <div style="display: flex; flex-direction: column;">
-                <a href="mailto:moakaus@tutamail.com">
-                    <div mail class="menu_button">
-                        <p class="menu_text"> moakaus@tutamail.com</p>
-                        <p class="arrow"> &gt;</p>
-                    </div>
-                </a><a href="tel:+201211654711">
-                    <div class="menu_button">
-                        <p class="menu_text"> +201211654711 </p>
-                        <p class="arrow"> &gt;</p>
-                    </div>
-                </a>
-                <!-- <i class="fa-brands fa-deviantart"></i> -->
-                <a>
-                    <div class="menu_button" onclick="copyToClipboard('#discord')">
-                        <p id="discord" class="menu_text"> <i class="fa-brands fa-discord"></i> mrbotic </p>
-                        <p class="arrow"> &gt;</p>
-                    </div>
-                </a>
-                <a href="https://www.deviantart.com/moakamusketeer" target="_blank">
-                    <div class="menu_button">
-                        <p class="menu_text"> <i class="fa-brands fa-deviantart"></i> moakamusketeer </p>
-                        <p class="arrow"> &gt;</p>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/marwan-hamada-a68843131/" target="_blank">
-                    <div class="menu_button">
-                        <p class="menu_text"> <i class="fa-brands fa-linkedin"></i></i> Marwan Hamada </p>
-                        <p class="arrow"> &gt;</p>
-                    </div>
-                </a>
-                <a href="https://github.com/Marobotic" target="_blank">
-                    <div class="menu_button">
-                        <p class="menu_text"> <i class="fa-brands fa-github"></i> Marobotic </p>
-                        <p class="arrow"> &gt;</p>
-                    </div>
-                </a>
-            </div>
-            <style>
-            input {
-                display: unset !important;
-            }
-            </style>
-        </div>
-    </div>
-    <div class="profile_info_container">
-        <div class="" style="margin-left: 70px;">
-            <p class="contact_title"style="text-transform: capitalize; font-size: 36; text-align: center; margin-top: 10px; margin-left: -20px;  color: #E55757;">
-                My Projects
-            </p>
-        </div>
-        <div class="schedule_card box_shadow" style="width:830px; min-height:  0px !important; position:relative; margin-bottom:26px;">
-            <style>
-            p,
-            a {
-                font-size: 19px;
-            }
-            </style>
-            <!--   Border here -->
-            <div class="seperator" style="margin-top: -20px;"></div>
-            <!-- Card UI -->
-            <div class="main-content projects_div  project_list" id="projects" style=" display: flex; margin-top: 60px; margin-bottom: 30px;">
-                <div class="small_card" id="one">
-                    <image src="images/urban.png" style="display: block; width: 100%;  height: auto !important;   border-radius: 10px 10px 0px 0px;"> </image>
-                    <div class="black_taint"> </div>
-                    <div class="project_banner">
-                        <p class="project_name"> The Urban Crew</p>
-                        <p> Voice assistance hiring website</p>
-                    </div>
-                    <div class="project_button">
-                        <a href="https://marobotic.github.io/urban/" target="_blank">
-                            <button> See More ➜</button> </a>
-                    </div>
-                </div>
-                <div class="small_card" id="four">
-                    <image src="images/eotp.png" style="display: block; width: 100%; height: auto !important;  "> </image>
-                    <div class="project_banner">
-                        <p class="project_name"> Aion: Tiamat's Return</p>
-                        <p> Website for an MMORPG</p>
-                    </div>
-                    <div class="project_button">
-                        <a href="https://marobotic.github.io/AEOTPC/" target="_blank">
-                            <button> See More ➜</button> </a>
-                    </div>
-                </div>
-                <div class="small_card">
-                    <image src="images/eotp.png" style="display: block; width: 100%; height: auto !important;  "> </image>
-                    <div class="project_banner">
-                        <p class="project_name"> Aion: Echoes Of The Past</p>
-                        <p> Website for an MMORPG</p>
-                    </div>
-                    <div class="project_button">
-                        <a href="https://marobotic.github.io/AEOTP/" target="_blank">
-                            <button> See More ➜</button> </a>
-                    </div>
-                </div>
-                <div class="small_card" id="five">
-                    <image src="images/ethereal-card.png" style="display: block; width: 100%; height: auto !important;  "> </image>
-                    <div class="project_banner">
-                        <p class="project_name"> Ethereal Aion</p>
-                        <p> Website for an MMORPG</p>
-                    </div>
-                    <div class="project_button">
-                        <a href="https://marobotic.github.io/Ethereal/" target="_blank">
-                            <button> See More ➜</button> </a>
-                    </div>
-                </div>
-                <div class="small_card" id="five">
-                    <image src="images/chariot.png" style="display: block; width: 100%; height: auto !important;  "> </image>
-                    <div class="project_banner">
-                        <p class="project_name"> Chariot For Cats</p>
-                        <p> Wordpress website to help cats with FIP</p>
-                    </div>
-                    <div class="project_button">
-                        <a href="https://chariotforcats.com" target="_blank">
-                            <button> See More ➜</button> </a>
-                    </div>
-                </div>
-                <div class="small_card" id="five">
-                    <image src="images/fuzznook.png" style="display: block; width: 100%; height: auto !important;  "> </image>
-                    <div class="project_banner">
-                        <p class="project_name"> Fuzznook</p>
-                        <p> Social media platform</p>
-                    </div>
-                    <div class="project_button">
-                        <a href="https://fuzznook.com" target="_blank">
-                            <button> See More ➜</button> </a>
-                    </div>
-                </div>
-                <div class="small_card" id="five">
-                    <image src="images/petjetpal.png" style="display: block; width: 100%; height: auto !important;  "> </image>
-                    <div class="project_banner">
-                        <p class="project_name"> PetJetPals</p>
-                        <p> Wordpress website that offers travel service for pets</p>
-                    </div>
-                    <div class="project_button">
-                        <a href="https://petjetpals.com" target="_blank">
-                            <button> See More ➜</button> </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="" style="margin-left: 70px;">
-            <p class="" style="text-transform: capitalize; font-size: 36px; text-align: center; margin-top: 10px; margin-left: -20px;  color: #E55757;">
-                About me
-            </p>
-        </div>
-        <div class="schedule_card box_shadow" style="width:830px; margin-top: 0px; min-height:  0px !important; position:relative; margin-bottom:26px;">
-            <style>
-            p,
-            a {
-                font-size: 19px;
-            }
-            </style>
-            <!--   Border here -->
-            <div class="seperator" style="margin-top: -20px;"></div>
-            <p class="text_padding">Hello! I'm Marwan, a Frontend Developer and Graphic Designer specializing in web development, logo design, and advertising. I create modern, visually striking designs with a strong focus on user experience. With expert-level skills in CSS and a sharp eye for design, I'm ready to bring creative and high-quality solutions to any project.</p>
-        </div>
-        <div class="schedule_card box_shadow" style="width:830px; min-height:  0px !important; position:relative; margin-bottom:26px;">
-            <style>
-            p,
-            a {
-                font-size: 19px;
-            }
-            </style>
-            <!--   Border here -->
-            <div class="seperator" style="margin-top: -20px;"></div>
-            <p class="text_padding"> I like to keep my skill versitile; I am a developer that aims to make everything on the internet prettier that is possible</p>
-            <p class="text_padding" style="margin-top: 0px; padding: 0px;">I am looking for remote job and I can do these fields: </p>
-            <ul class="text_padding" style="margin-top: 0px; padding: 0px;">
-                <li>Graphic Design</li>
-                <li>Frontend Developer</li>
-                <li>Web Developer</li>
-                <li>UI/UX</li>
-                <li>App Design</li>
-                <li>Customer Support</li>
-                <li>Social Media Manager</li>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <a href="#" class="logo">Marwan</a>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+
             </ul>
+            <div class="hamburger" id="hamburger">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content fade-in">
+            <h1>Hi, I'm <span>Marwan</span></h1>
+            <h2>Web Developer | React & WordPress Specialist</h2>
+            <p>I build fast, scalable, and visually stunning web experiences. Specializing in React, JavaScript, and performance optimization.</p>
+            <a href="#projects" class="cta-button">View My Work →</a>
         </div>
-    </div>
-</div>
-</div>
-<div id="snackbar">Mrbotic copied to clipboard </div>
-<style>
-</style>
-</body>
-<script>
-var tooltip = document.querySelectorAll('.coupontooltip');
-
-document.addEventListener('mousemove', fn, false);
-
-function fn(e) {
-    for (var i = tooltip.length; i--;) {
-        tooltip[i].style.left = e.pageX + 'px';
-        tooltip[i].style.top = e.pageY + 'px';
+        <div class="hero-image fade-in">
+            <img src="images/maro.png" alt="Marwan's Profile Picture" class="profile-img">
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <!-- Marquee Project Showcase -->
+        <div class="projects">
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <!-- Project mockup images -->
+                    <div class="project-mockup">
+                        <img src="images/aion classic mockup.png" alt="Aion Classic">
+                        <div class="project-overlay">
+                            <h3>Aion Classic</h3>
+                            <p>PHP Website</p>
+                        </div>
+                    </div>
+                    <div class="project-mockup">
+                        <img src="images/chariotforcats_mockup.png" alt="Chariot for Cats">
+                        <div class="project-overlay">
+                            <h3>Chariot for Cats</h3>
+                            <p>WooCommerce</p>
+                        </div>
+                    </div>
+                    <div class="project-mockup">
+                        <img src="images/fuzznook_mockup.png" alt="Fuzznook">
+                        <div class="project-overlay">
+                            <h3>Fuzznook</h3>
+                            <p>Social Media Platform</p>
+                        </div>
+                    </div>
+                    <div class="project-mockup">
+                        <img src="images/aion modern mockup.png" alt="Aion Modern">
+                        <div class="project-overlay">
+                            <h3>Aion Modern</h3>
+                            <p>PHP Website</p>
+                        </div>
+                    </div>
+                    <div class="project-mockup">
+                        <img src="images/petjetpals_mockup.png" alt="PetJetPals">
+                        <div class="project-overlay">
+                            <h3>PetJetPals</h3>
+                            <p>WordPress + Gravity Forms</p>
+                        </div>
+                    </div>
+                    <div class="project-mockup">
+                        <img src="images/the-urban-crew.png" alt="The Urban Crew">
+                        <div class="project-overlay">
+                            <h3>The Urban Crew</h3>
+                            <p>Hiring Assistance</p>
+                        </div>
+                    </div>
+                    <div class="project-mockup">
+                        <img src="images/aris-potion-mockup.png" alt="Aris Potion">
+                        <div class="project-overlay">
+                            <h3>Aris Potion</h3>
+                            <p>WooCommerce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project Details Grid -->
+        <div class="projects-grid">
+            <!-- PetJetPals -->
+            <div class="project-card fade-in">
+                <div class="project-content">
+                    <h3 class="project-title">PetJetPals</h3>
+                    <p class="project-description">A complete WordPress solution for pet travel services with custom Gravity Forms integration for booking management.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">Gravity Forms</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://petjetpals.com" target="_blank" class="project-link demo-link">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ChariotForCats -->
+            <div class="project-card fade-in">
+                <div class="project-content">
+                    <h3 class="project-title">ChariotForCats</h3>
+                    <p class="project-description">E-commerce solution for cat transportation services with custom WooCommerce extensions and payment gateway integration.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">WooCommerce</span>
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://chariotforcats.com" target="_blank" class="project-link demo-link">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Fuzznook -->
+            <div class="project-card fade-in">
+                <div class="project-content">
+                    <h3 class="project-title">Fuzznook</h3>
+                    <p class="project-description">Full-featured social media platform with user profiles, groups, real-time chat, and content sharing capabilities.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">WebSockets</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://fuzznook.com" target="_blank" class="project-link demo-link">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Aion Series -->
+            <div class="project-card fade-in">
+                <div class="project-content">
+                    <h3 class="project-title">Aion Game Series</h3>
+                    <p class="project-description">Collection of PHP gaming websites including Ethereal Aion, Echoes of the Past, and Tiamat's Return.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">jQuery</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://marobotic.github.io/Site-Selector/" target="_blank" class="project-link demo-link">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <!-- The Urban Crew -->
+            <div class="project-card fade-in">
+                <div class="project-content">
+                    <h3 class="project-title">The Urban Crew</h3>
+                    <p class="project-description">Hiring assistance platform connecting employers with skilled workers in urban areas.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">Custom Theme</span>
+                        <span class="tech-tag">Job Manager</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://marobotic.github.io/urban/" target="_blank" class="project-link demo-link">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        /* Marquee Styles */
+    .marquee-container {
+        width: 100%;
+        overflow: hidden;
+        margin: 3rem 0;
+        position: relative;
     }
-}
+    
+    .marquee-track {
+        display: flex;
+        width: max-content;
+        animation: scroll 30s linear infinite;
+    }
+    
+    .project-mockup {
+        position: relative;
+        width: 300px;
+        height: 180px;
+        margin-right: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+    }
+    
+    .project-mockup:hover {
+        transform: scale(1.05);
+    }
+    
+    .project-mockup img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .project-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        color: white;
+        padding: 1rem;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .project-mockup:hover .project-overlay {
+        transform: translateY(0);
+    }
+    
+    .project-overlay h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .project-overlay p {
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+    
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    
+    /* Adjust project grid for new layout */
+    .projects-grid {
+        margin-top: 4rem;
+    }
+</style>
+    <script>
+        // Pause marquee on hover
+    const marqueeTrack = document.querySelector('.marquee-track');
+    
+    marqueeTrack.addEventListener('mouseenter', () => {
+        marqueeTrack.style.animationPlayState = 'paused';
+    });
+    
+    marqueeTrack.addEventListener('mouseleave', () => {
+        marqueeTrack.style.animationPlayState = 'running';
+    });
+</script>
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <h2 class="section-title">Work <span>Experience</span></h2>
+        <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Mid 2023 - Present</div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">WordPress/WooCommerce Developer</h3>
+                    <p class="timeline-company">Chaired the Core</p>
+                    <p class="timeline-description">
+                        - Developed custom WordPress themes and plugins<br>
+                        - Optimized WooCommerce stores for better performance<br>
+                        - Implemented custom solutions using Elementor
+                    </p>
+                </div>
+            </div>
+            <!-- Experience 2 -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022 - 2023</div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">WordPress Developer</h3>
+                    <p class="timeline-company">Podtools</p>
+                    <p class="timeline-description">
+                        - Maintained and updated WordPress sites<br>
+                        - Implemented solutions using Elementor page builder<br>
+                        - Debugged frontend environment for better specifications
+                    </p>
+                </div>
+            </div>
+            <!-- Experience 3 -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Late 2019</div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Full-Stack Developer</h3>
+                    <p class="timeline-company">Social Media Platform</p>
+                    <p class="timeline-description">
+                        - Created refreshed core features including Groups and Profiles<br>
+                        - Executed data discovery with PHP and CSS features<br>
+                        - Improved site performance and user experience
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <h2 class="section-title">My <span>Education</span></h2>
+        <div class="timeline">
+            <!-- Education 1 -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2017 - Present</div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Graphic Design & Multimedia Arts</h3>
+                    <p class="timeline-company">Phases University</p>
+                    <p class="timeline-description">
+                        - Focus on UI/UX design principles<br>
+                        - Motion graphics and digital art<br>
+                        - Adaptive design for modern web
+                    </p>
+                </div>
+            </div>
+            <!-- Education 2 -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2015 - 2017</div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Economics & Accounting Studies</h3>
+                    <p class="timeline-company">Focus on Microsoft Office applications</p>
+                    <p class="timeline-description">
+                        - Financial analysis and reporting<br>
+                        - Business administration fundamentals<br>
+                        - Data management with Excel
+                    </p>
+                </div>
+            </div>
+            <!-- Education 3 -->
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2015</div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">High School Diploma</h3>
+                    <p class="timeline-company">Assistant School - OPA 3/4</p>
+                    <p class="timeline-description">
+                        - General education with focus on technology<br>
+                        - Early exposure to web development<br>
+                        - Basic programming concepts
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="contact-container">
+            <div class="contact-info fade-in">
+                <h3>Contact Information</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <span>moakaus@tutamail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <span>+20 1211654711</span>
+                    </div>
+                </div>
+            <h3>Follow Me</h3>
+<div class="social-links">
+    <!-- Discord (copy to clipboard) -->
+    <a href="#" class="social-link" onclick="copyDiscordUsername(event)" title="Copy Discord Username">
+        <svg width="20" height="20" viewBox="0 0 245 240" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M104.4 104.7c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.3-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zm36.2 0c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.3-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1z"/>
+            <path d="M189.5 20h-134C42.4 20 30 32.4 30 47.5v145c0 15.1 12.4 27.5 27.5 27.5h113.6l-5.3-18.5 12.8 11.9 12.1 11.2 21.4 18.7V47.5c0-15.1-12.4-27.5-27.5-27.5zM163.3 153.2s-4.5-5.3-8.2-10c16.3-4.6 22.5-14.8 22.5-14.8-5.1 3.3-9.9 5.6-14.3 7.2-6.2 2.6-12.1 4.3-17.9 5.3-11.8 2.2-22.5 1.6-31.7-.1-7-1.3-13.1-3.2-18.1-5.3-2.8-1.1-5.8-2.4-8.8-4-0.4-0.2-0.9-0.4-1.3-0.7-0.3-0.2-0.5-0.3-0.7-0.4-3.2-1.8-5-3-5-3s6 10 21.9 14.8c-3.7 4.7-8.3 10.1-8.3 10.1-27.5-0.9-37.9-18.9-37.9-18.9 0-40.1 17.9-72.6 17.9-72.6 17.9-13.3 34.9-12.9 34.9-12.9l1.3 1.5c-22.4 6.5-32.7 16.4-32.7 16.4s2.7-1.5 7.3-3.6c13.2-5.8 23.7-7.4 28-7.8 0.7-0.1 1.3-0.2 2-0.2 7.1-0.9 15.1-1.1 23.3-0.2 10.9 1.3 22.6 4.7 34.6 11.5 0 0-9.8-9.3-30.9-15.8l1.8-2s17-0.4 34.9 12.9c0 0 17.9 32.5 17.9 72.6 0.1 0-10.5 18-38 18.9z"/>
+        </svg>
+    </a>
 
-var txt1;
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/marwan-hamada-a68843131/" class="social-link" target="_blank" title="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+        </svg>
+    </a>
 
-function copyToClipboard(element) {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val($(element).text()).select();
-    document.execCommand("copy");
-    $temp.remove();
+    <!-- DeviantArt -->
+    <a href="https://www.deviantart.com/moakamusketeer" class="social-link" target="_blank" title="DeviantArt">
+        <svg width="20" height="20" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M218.2 108.1 314.1 0h145.6L312.7 162.6l-17.3 25.5H175.2l-51 73.8h131.6L197.9 404l-25.4 33.8h-146L199.3 227l18.9-29H339l50.2-70.1H257.5z"/>
+        </svg>
+    </a>
 
-    // pop_bottom_bubble_message("Copied to Clipboard");
-    var x = document.getElementById("snackbar");
-    x.className = "show";
-    setTimeout(function() { x.className = x.className.replace("show", ""); }, 3000);
+    <!-- GitHub -->
+    <a href="https://github.com/Marobotic" class="social-link" target="_blank" title="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0.5C5.37 0.5 0 5.87 0 12.5c0 5.29 3.438 9.77 8.205 11.36.6.11.82-.26.82-.58 0-.29-.01-1.06-.015-2.1-3.338.73-4.042-1.61-4.042-1.61-.546-1.38-1.335-1.75-1.335-1.75-1.09-.75.083-.73.083-.73 1.205.09 1.84 1.24 1.84 1.24 1.07 1.83 2.807 1.3 3.495.99.11-.775.418-1.3.76-1.6-2.665-.3-5.467-1.33-5.467-5.93 0-1.31.465-2.38 1.235-3.22-.135-.3-.54-1.52.105-3.17 0 0 1.005-.32 3.3 1.23a11.47 11.47 0 0 1 6 0c2.28-1.55 3.285-1.23 3.285-1.23.645 1.65.24 2.87.12 3.17.765.84 1.23 1.91 1.23 3.22 0 4.61-2.807 5.625-5.475 5.92.435.375.81 1.096.81 2.21 0 1.6-.015 2.89-.015 3.28 0 .32.21.69.825.57C20.565 22.27 24 17.79 24 12.5c0-6.63-5.37-12-12-12z"/>
+        </svg>
+    </a>
+</div>
 
-
-    $(".notification_div").append(txt1); // Append new elements
-    txt1 = "<button class='notification_text' id='notifcation'>Text copied to clipboard</button>"; // Create text with HTML
-    $(".notification_text").delay(3500).slideUp();
+<script>
+function copyDiscordUsername(event) {
+    event.preventDefault();
+    const text = "mrbotic";
+    navigator.clipboard.writeText(text).then(() => {
+        alert("Discord username copied to clipboard: " + text);
+    }).catch(err => {
+        alert("Failed to copy Discord username");
+    });
 }
 </script>
+
+            </div>
+            <div class="contact-form fade-in">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Out Of Order (for now)</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Marwan. All rights reserved.</p>
+    </footer>
+    <script>
+    // Mobile Navigation Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('#nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+
+    // Scroll animation
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    fadeElements.forEach(element => {
+        observer.observe(element);
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.style.padding = '1rem 5%';
+            header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+        } else {
+            header.style.padding = '1.5rem 5%';
+            header.style.boxShadow = 'none';
+        }
+    });
+    </script>
+</body>
 
 </html>
